@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SUMmOnCondition>
+  <fragmentMasses>
+    <reagent mz="126.127726" />
+    <reagent mz="127.124761" />
+    <reagent mz="127.131081" />
+    <reagent mz="128.128116" />
+    <reagent mz="128.134436" />
+    <reagent mz="129.131471" />
+    <reagent mz="129.137790" />
+    <reagent mz="130.134825" />
+    <reagent mz="130.141145" />
+    <reagent mz="131.138180" />
+    <reagent mz="131.144500" />
+    <reagent mz="132.141535" />
+    <reagent mz="132.147855" />
+    <reagent mz="133.14489" />
+    <reagent mz="133.15121" />
+    <reagent mz="134.148245" />
+  </fragmentMasses>
+  <isotopicContributions>
+    <contributingMz value="1">
+      <affected mz="3" correction="0.0872" />
+      <affected mz="5" correction="0.0031" />
+    </contributingMz>
+    <contributingMz value="2">
+      <affected mz="4" correction="0.0867" />
+      <affected mz="6" correction="0.0034" />
+    </contributingMz>
+    <contributingMz value="3">
+      <affected mz="1" correction="0.0078" />
+      <affected mz="5" correction="0.0782" />
+      <affected mz="7" correction="0.0023" />
+    </contributingMz>
+    <contributingMz value="4">
+      <affected mz="2" correction="0.0076" />
+      <affected mz="6" correction="0.076" />
+      <affected mz="8" correction="0.0023" />
+    </contributingMz>
+    <contributingMz value="5">
+      <affected mz="1" correction="0" />
+      <affected mz="3" correction="0.0135" />
+      <affected mz="7" correction="0.0639" />
+      <affected mz="9" correction="0.0022" />
+    </contributingMz>
+    <contributingMz value="6">
+      <affected mz="2" correction="0.0034" />
+      <affected mz="4" correction="0.0244" />
+      <affected mz="8" correction="0.0629" />
+      <affected mz="10" correction="0.0015" />
+    </contributingMz>
+    <contributingMz value="7">
+      <affected mz="3" correction="0.0039" />
+      <affected mz="5" correction="0.0244" />
+      <affected mz="9" correction="0.0547" />
+      <affected mz="11" correction="0" />
+    </contributingMz>
+    <contributingMz value="8">
+      <affected mz="4" correction="0.003" />
+      <affected mz="6" correction="0.0245" />
+      <affected mz="10" correction="0.0539" />
+      <affected mz="12" correction="0" />
+    </contributingMz>
+    <contributingMz value="9">
+      <affected mz="5" correction="0" />
+      <affected mz="7" correction="0.0282" />
+      <affected mz="11" correction="0.0451" />
+      <affected mz="13" correction="0" />
+    </contributingMz>
+    <contributingMz value="10">
+      <affected mz="6" correction="0" />
+      <affected mz="8" correction="0.0278" />
+      <affected mz="12" correction="0.0446" />
+      <affected mz="14" correction="0" />
+    </contributingMz>
+    <contributingMz value="11">
+      <affected mz="7" correction="0.0018" />
+      <affected mz="9" correction="0.0388" />
+      <affected mz="13" correction="0.0327" />
+      <affected mz="15" correction="0" />
+    </contributingMz>
+    <contributingMz value="12">
+      <affected mz="8" correction="0.0016" />
+      <affected mz="10" correction="0.0262" />
+      <affected mz="14" correction="0.0327" />
+      <affected mz="16" correction="0" />
+    </contributingMz>
+    <contributingMz value="13">
+      <affected mz="9" correction="0" />
+      <affected mz="11" correction="0.0431" />
+      <affected mz="15" correction="0.0193" />
+    </contributingMz>
+    <contributingMz value="14">
+      <affected mz="10" correction="0" />
+      <affected mz="12" correction="0.0319" />
+      <affected mz="16" correction="0.0198" />
+    </contributingMz>
+    <contributingMz value="15">
+      <affected mz="11" correction="0.0033" />
+      <affected mz="13" correction="0.0487" />
+    </contributingMz>
+    <contributingMz value="16">
+      <affected mz="12" correction="0.0037" />
+      <affected mz="14" correction="0.0497" />
+    </contributingMz>
+  </isotopicContributions>
+  <massTolerance value="0.001" />
+  <centroiding type="2" iterations="1" />
+  <normalization type="-1" />
+  <targetMs level="2" />
+  <output type="1" />
+  <quantitationFile name="quantitation.tsv" />
+  <minimumThreshhold value="0" />
+</SUMmOnCondition>
