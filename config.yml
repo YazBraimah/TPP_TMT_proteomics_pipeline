@@ -2,9 +2,9 @@
 PEP: '/home/yahmed/Proteomics/virilis_group_repro/dvir.proteins.fasta'
 
 # Path to a folder where final files will be written.
-OUT_DIR: '/home/yahmed/Proteomics/virilis_group_repro/OUTPUT'
+OUT_DIR: '/home/yahmed/Proteomics/virilis_group_repro/dvir1.06_OUTPUT'
 HOME_DIR: '/home/yahmed/Proteomics/virilis_group_repro'
-LOGS_DIR: '/home/yahmed/Proteomics/virilis_group_repro/OUTPUT/LOGS'
+LOGS_DIR: '/home/yahmed/Proteomics/virilis_group_repro/dvir1.06_OUTPUT/LOGS'
 
 # Path to a JSON file with samples and their corresponding FASTQ files.
 MZ_SAMPLES_JSON: '/home/yahmed/Proteomics/virilis_group_repro/samples_mzML.json'

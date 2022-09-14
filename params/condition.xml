@@ -105,9 +105,9 @@
     </contributingMz>
   </isotopicContributions>
   <massTolerance value="0.001" />
-  <centroiding type="2" iterations="1" />
+  <centroiding type="0" iterations="1" />
   <normalization type="-1" />
-  <targetMs level="2" />
+  <reporterFromMS3 value="1" />
   <output type="1" />
   <quantitationFile name="quantitation.tsv" />
   <minimumThreshhold value="0" />
