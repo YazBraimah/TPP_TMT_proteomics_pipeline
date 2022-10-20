@@ -1,0 +1,1 @@
+snakemake -j 50 --use-singularity --singularity-args "-B /home/yahmed/Proteomics/virilis_group_repro/:/data/"

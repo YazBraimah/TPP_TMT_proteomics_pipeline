@@ -19,9 +19,9 @@
 	<note type="input" label="protein, taxon">protein_database</note>
 
 <note> PRECURSOR MASS TOLERANCES. In the example below, a -2.0 Da to 4.0 Da (monoisotopic mass) window is searched for peptide candidates. Since this is monoisotopic mass, so for non-accurate-mass instruments, for which the precursor is often taken nearer to the isotopically averaged mass, an asymmetric tolerance (-2.0 Da to 4.0 Da) is preferable. This somewhat imitates a (-3.0 Da to 3.0 Da) window for averaged mass (but not exactly)</note>
- 	<note type="input" label="spectrum, parent monoisotopic mass error minus">2.0</note>
- 	<note type="input" label="spectrum, parent monoisotopic mass error plus">4.0</note>
-	<note type="input" label="spectrum, parent monoisotopic mass error units">Daltons</note>
+ 	<note type="input" label="spectrum, parent monoisotopic mass error minus">10</note>
+ 	<note type="input" label="spectrum, parent monoisotopic mass error plus">10</note>
+	<note type="input" label="spectrum, parent monoisotopic mass error units">ppm</note>
 		<note>The value for this parameter may be 'Daltons' or 'ppm': all other values are ignored</note>
 	<note type="input" label="spectrum, parent monoisotopic mass isotope error">no</note>
 		<note>This allows peptide candidates in windows around -1 Da and -2 Da from the acquired mass to be considered. Only applicable when the minus/plus window above is set to less than 0.5 Da. Good for accurate-mass instruments for which the reported precursor mass is not corrected to the monoisotopic mass. </note>
@@ -31,11 +31,11 @@
 
 <note> MODIFICATIONS. In the example below, there is a static (carbamidomethyl) modification on C, and variable modifications on M (oxidation). Multiple modifications can be separated by commas, as in "80.0@S,80.0@T". Peptide terminal modifications can be specified with the symbol '[' for N-terminus and ']' for C-terminus, such as 42.0@[ .  </note>
 
- 	<note type="input" label="residue, modification mass">57.021464@C</note>
+ 	<note type="input" label="residue, modification mass">57.021464@C,304.207146@K</note>
  	<note type="input" label="residue, potential modification mass">15.994915@M</note>
 	<note type="input" label="residue, potential modification motif"></note>
 		<note> You can specify a variable modification only when present in a motif. For instance, 0.998@N!{P}[ST] is a deamidation modification on N only if it is present in an N[any but P][S or T] motif (N-glycosite). </note>
-	<note type="input" label="protein, N-terminal residue modification mass"></note>
+	<note type="input" label="protein, N-terminal residue modification mass">304.207146@K</note>
  	<note type="input" label="protein, C-terminal residue modification mass"></note>
 		<note> These are *static* modifications on the PROTEINS' N or C-termini. </note>
 
@@ -44,14 +44,14 @@
 	<note type="input" label="scoring, maximum missed cleavage sites">2</note>
 
 <note> REFINEMENT. Do not use unless you know what you are doing. Set "refine" to "yes" and specify what you want to search in the refinement. For non-confusing results, repeat the same modifications you set above for the first-pass here.</note>
-	<note type="input" label="refine">no</note>
+	<note type="input" label="refine">yes</note>
 	<note type="input" label="refine, maximum valid expectation value">0.1</note>
  	<note type="input" label="refine, modification mass">57.012@C</note>
 	<note type="input" label="refine, potential modification mass">15.994915@M</note>
 	<note type="input" label="refine, potential modification motif"></note>
  	<note type="input" label="refine, cleavage semi">yes</note>
 	<note type="input" label="refine, unanticipated cleavage">no</note>
-	<note type="input" label="refine, potential N-terminus modifications"></note>
+	<note type="input" label="refine, potential N-terminus modifications">304.207146</note>
 	<note type="input" label="refine, potential C-terminus modifications"></note>
 	<note type="input" label="refine, point mutations">no</note>
 	<note type="input" label="refine, use potential modifications for full refinement">no</note>

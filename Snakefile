@@ -145,7 +145,7 @@ rule comet:
     params:
         i = "/data/mzML_files/{sample}.mzML",
         o = join('/data', basename(OUT_DIR), 'comet', '{sample}.pep.xml'),
-        t = "/data/params/comet.params.high-high",
+        t = "/data/params/comet.params.high-low",
         l = join('/data', basename(OUT_DIR), basename(LOGS_DIR), '{sample}_comet.log'),
         d = join('/data', basename(OUT_DIR), 'database_plus_decoy.fa')
     singularity:
@@ -189,11 +189,11 @@ rule PeptideProphet:
     shell:
         'xinteract'
         ' -N{params.o}'
-        ' -p0.05'
-        ' -l5'
+        ' -p0.0'
+        ' -l7'
         ' -PPM'
         ' -OAP'
-        ' -D{params.d}'
+        # ' -D{params.d}'
         ' -dDECOY'
         ' -L{params.c}'
         ' -THREADS=8'
